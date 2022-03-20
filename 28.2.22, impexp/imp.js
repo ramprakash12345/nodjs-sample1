@@ -33,6 +33,6 @@ console.log (impData4.div(300,15));
 console.log (impData4.div(450,20));
 console.log (impData4.div(700,5));
 
-const impConcat = require ('. /expconc');
+const impConcat = require ('./expconc');
 console.log(impConcat.concat('hello','saurabh'));
 

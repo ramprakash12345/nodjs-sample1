@@ -9,6 +9,8 @@ const generatePyramid= NumberofRows =>{
       str += j;
       }
       console.log(str);
+  
     }
+    return 'done' ;
   }
   exports.generatePyramid=generatePyramid;
