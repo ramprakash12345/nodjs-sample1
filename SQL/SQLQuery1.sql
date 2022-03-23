@@ -1,1 +1,1 @@
-create database saurabh
+create table abc(nilesh varchar(2),number int);
