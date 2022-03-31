@@ -5,12 +5,14 @@ var cookieParser = require('cookie-parser');
 const bodyParser = require("body-parser");
 var logger = require('morgan');
 
+
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 const postRouter = require('./routes/postRouter');
 const formRouter = require('./routes/formRouter');
-const mobileRouter= require('./routes/mobileRouter')
-const findRouter= require('./routes/findRouter')
+const mobileRouter= require('./routes/mobileRouter');
+const findRouter= require('./routes/findRouter');
+const getRouter = require('/routes/getRouter');
 
 var app = express();
 
@@ -33,6 +35,7 @@ app.get('/mobileDetails/:name', mobileRouter);
 app.post('/addName', postRouter);
 app.get('/getForm', formRouter);
 app.post('/postRegDetails', formRouter);
+app.get('/getDetails',getRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
